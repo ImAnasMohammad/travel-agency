@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const Layout = () => {
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+
+const Layout = ({children}) => {
   return (
     <>
-    
+      <NavBar/>
+      {children}
+      <Footer/>
     </>
   )
 }
